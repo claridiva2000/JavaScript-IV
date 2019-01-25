@@ -13,6 +13,7 @@ class Person {
 };
 
 
+
 class Instructor  extends Person {
   constructor(skills){
     super(skills);
@@ -31,6 +32,8 @@ class Instructor  extends Person {
     return `${this.name} receives a perfect score on ${this.subject}.`;
   }
 };
+
+
 
 class Student extends Person {
   constructor(noobs){
@@ -56,6 +59,8 @@ class Student extends Person {
   }
 };
 
+
+
 class PManager extends Instructor {
   constructor(pm){
     super(pm);
@@ -71,9 +76,6 @@ debugsCode() {
   return `${this.name} debugs  ${student.name}'s code on ${this.subject}`;
 }
 };
-
-
-
 
 
 
