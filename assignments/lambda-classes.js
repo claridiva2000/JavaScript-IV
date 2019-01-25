@@ -73,9 +73,6 @@ class PManager extends Instructor {
 
 
 
-
-
-
 const fred = new PManager({
   name: 'Fred',
   location: 'Bedrock',
