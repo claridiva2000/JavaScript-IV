@@ -66,6 +66,10 @@ class PManager extends Instructor {
   standUp() {
   return `${this.name} announces to  ${this.channel}, @channel standy times!.`;
 }
+
+debugsCode() {
+  return `${this.name} debugs  ${student.name}'s code on ${this.subject}`;
+}
 };
 
 
@@ -86,7 +90,8 @@ const fred = new PManager({
   previousBackground: 'programming tutor',
   className: 'abcd',
   favSubjects: ['CSS', 'HTML', 'JAVASCRIPT'],
-  channel: 'cohort4'
+  channel: 'cohort4',
+  
 });
 
 // console.log(fred.className);
