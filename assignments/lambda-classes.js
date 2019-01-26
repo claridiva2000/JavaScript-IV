@@ -40,7 +40,7 @@ class Student extends Person {
     super(noobs);
     this.previousBackground = noobs.previousBackground;
     this.className = noobs.className;
-    
+    this.subject = noobs.subject;
     this.favSubjects= noobs.favSubjects;//array
     
   }
@@ -73,7 +73,7 @@ class PManager extends Instructor {
 }
 
 debugsCode() {
-  return `${this.name} debugs  ${student.name}'s code on ${this.subject}`;
+  return `${this.name} debugs  ${bambam.name}'s code on ${this.subject}`;
 }
 };
 
@@ -86,22 +86,45 @@ const fred = new PManager({
   gender: 'male',
   favLanguage: 'JavaScript',
   specialty: 'Front-end',
-  catchPhrase: `Don't forget the homies`,
-  favSubjects: 'css',
-  subject: 'HTML',
+  catchPhrase: `WIIIILLLMMMMMMAAAAAA`,
+  subject: 'Graphic Design',
   previousBackground: 'programming tutor',
-  className: 'abcd',
-  favSubjects: ['CSS', 'HTML', 'JAVASCRIPT'],
+ 
+  
   channel: 'cohort4',
   
 });
 
+const wilma = new Instructor({
+  name: 'Wilma',
+  location: 'Bedrock',
+  age: 35,
+  gender: 'female',
+  favLanguage: 'CSS',
+  specialty: 'back-end',
+  catchPhrase: `Stop, Fred`,
+  subject: 'UI/UX Design',
+});
+
+const bambam = new Student({
+  name: 'BamBam',
+  location: 'Bedrock',
+  age: 5,
+  gender: 'male',
+  favLanguage: 'JavaScript',
+  specialty: 'Front-end',
+  catchPhrase: `Bam-Bam!!`,
+  favSubjects: ['CSS', 'HTML', 'JAVASCRIPT'],
+  className:'webpt4',
+  subject: 'Javascript',
+});
+
 // console.log(fred.className);
+console.log(fred.name);
+console.log(wilma.demo());
+console.log(wilma.grade());
+console.log(bambam.listsSubjects());
+console.log(bambam.PRAssignment());
+console.log(bambam.sprintChallenge());
 console.log(fred.standUp());
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
+console.log(fred.debugsCode());
